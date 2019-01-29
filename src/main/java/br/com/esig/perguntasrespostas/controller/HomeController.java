@@ -60,26 +60,10 @@ public class HomeController {
             model.addAttribute("sessionEmail",  globals.getEmail() );
             model.addAttribute("sessionNome", globals.getNomeUser());
             model.addAttribute("sessionLogado", true);
-
         }else{
-
-//            List<Usuario> user1 = usuarioService.recuperar("rfcbf@me.com");
-//
-//            Global global = Global.getInstance();
-//
-//            global.setEmail(user1.get(0).getEmail());
-//            global.setNomeUser(user1.get(0).getNome());
-//            global.setLogado(true);
-
-//            if (user1.isEmpty()) {
-                model.addAttribute("sessionEmail", null);
-                model.addAttribute("sessionNome", null);
-                model.addAttribute("sessionLogado", false);
-//            }else{
-//                model.addAttribute("sessionEmail",  user1.get(0).getEmail() );
-//                model.addAttribute("sessionNome", user1.get(0).getNome());
-//                model.addAttribute("sessionLogado", true);
-//            }
+            model.addAttribute("sessionEmail", null);
+            model.addAttribute("sessionNome", null);
+            model.addAttribute("sessionLogado", false);
         }
 
         return new ModelAndView("/home", model);
