@@ -7,7 +7,6 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 @Entity
-//@Component
 @Table(name = "usuario")
 public class Usuario {
 
