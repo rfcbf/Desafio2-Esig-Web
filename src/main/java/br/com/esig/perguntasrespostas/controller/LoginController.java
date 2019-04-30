@@ -31,7 +31,7 @@ public class LoginController {
 
         Global globals = Global.getInstance();
 
-        Object user = session.getAttribute("usuarioLogado");
+        //Object user = session.getAttribute("usuarioLogado");
 
         if (globals.isLogado()){
             model.addAttribute("sessionEmail",  globals.getEmail() );
@@ -50,7 +50,7 @@ public class LoginController {
     public ModelAndView editarContaForm(ModelMap model, HttpSession session){
         Global globals = Global.getInstance();
 
-        Object user = session.getAttribute("usuarioLogado");
+        //Object user = session.getAttribute("usuarioLogado");
 
         if (globals.isLogado()){
             model.addAttribute("sessionEmail",  globals.getEmail() );
@@ -69,7 +69,7 @@ public class LoginController {
     public ModelAndView criarContaForm(ModelMap model, HttpSession session){
         Global globals = Global.getInstance();
 
-        Object user = session.getAttribute("usuarioLogado");
+        //Object user = session.getAttribute("usuarioLogado");
 
         if (globals.isLogado()){
             model.addAttribute("sessionEmail",  globals.getEmail() );

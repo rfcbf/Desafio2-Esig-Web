@@ -36,7 +36,7 @@ public class HomeController {
 
         Global globals = Global.getInstance();
 
-        Object user = session.getAttribute("usuarioLogado");
+        //Object user = session.getAttribute("usuarioLogado");
 
         //verificando totais
         List<Usuario> todosUsuarios = usuarioService.recuperar("");

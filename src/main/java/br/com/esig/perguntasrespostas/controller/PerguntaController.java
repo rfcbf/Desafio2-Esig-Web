@@ -16,8 +16,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -36,7 +34,7 @@ public class PerguntaController {
 
         Global globals = Global.getInstance();
 
-        Object user = session.getAttribute("usuarioLogado");
+        //Object user = session.getAttribute("usuarioLogado");
 
         if (globals.isLogado()){
             model.addAttribute("sessionEmail",  globals.getEmail() );
@@ -64,7 +62,7 @@ public class PerguntaController {
             return "redirect:/perguntas/criar";
         }
 
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        //DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
         Date date = new Date();
 
         perguntas.setUser(usuario1);

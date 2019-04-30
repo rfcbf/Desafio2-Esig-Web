@@ -23,7 +23,7 @@ public class RestHomeController {
     @Autowired
     private RespostasService respostasService;
 
-    @GetMapping("/home")
+    @GetMapping("/hometemp")
     public String totais(){
 
         String retorno = "";

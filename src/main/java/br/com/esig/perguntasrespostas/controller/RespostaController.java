@@ -20,8 +20,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -43,7 +41,7 @@ public class RespostaController {
 
         Global globals = Global.getInstance();
 
-        Object user = session.getAttribute("usuarioLogado");
+        //Object user = session.getAttribute("usuarioLogado");
 
         Perguntas pergunta = perguntasService.recuperarPorId(id);
         List<Respostas> resposta = respostasService.recuperar(pergunta);
@@ -73,7 +71,7 @@ public class RespostaController {
         Usuario usuario1 = userList.get(0);
         respostas.setUser(usuario1);
 
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        //DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
         Date date = new Date();
         respostas.setCreatedAt(date);
 

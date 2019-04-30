@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PerguntasrespostasApplication<perguntasrespostas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "br.com.esig.perguntasrespostas.PerguntasrespostasApplication",
+            "projectName": "perguntasrespostas",
+            "args": ""
+        }
+    ]
+}
